@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    1)
+    <script>
+        var x = 2;
+
+        function isPrime(num){
+            var i = 2;
+            while(i <= num / 2){
+                if(num % i == 0){
+                    return false;
+                }
+                i++;
+            }
+            return true;
+        }
+
+        while(x <= 100){
+            if(isPrime(x)){
+                console.log(x)
+            }
+            x++;
+        }
+    </script>
+
+    2),3) 
+    <script>
+        var basket = [
+        {
+            name: T-shirt "^",
+            price: 15$,
+            count: 3
+        },
+        {
+            name: Jacket "^",
+            price: 45$,
+            count: 2
+        }
+    ]
+
+    function countBasketPrice(mas){
+        var sumBasket = 0;
+        for(var item of mas){
+            sumBasket += item.price * item.count
+        }
+        return sumBasket
+    }
+    console.log(countBasketPrice(basket))
+    </script>
+    
+    4)
+
+    <script>
+        for (var i = 0; i <= 9; console.log(i++))
+        
+    </script>
+
+</body>
+</html>
